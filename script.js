@@ -4,7 +4,8 @@ async function searchCar() {
   imageContainer.innerHTML = '';
 
   const apiKey = '51424372-6715adee8b822fb09707a802d'; // Pixabay test API key
-  const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(query)}&image_type=photo&per_page=9`;
+  const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(query + ' car')}&image_type=photo&per_page=9`;
+;
 
   try {
     const response = await fetch(url);
